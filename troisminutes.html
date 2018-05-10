@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trois Minutes / Parodies - Trope Theatre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/pagestyle.css" />
+    <script src="data/pageSlider.js"></script>
+    <script defer src="fonts/fontawesome-all.js"></script>
+</head>
+
+<body>
+    <div id="menu">
+        <ul>
+            <!-- change the active class per page-->
+            <a href="pendus.html">
+                <li>Pendus</li>
+            </a>
+            <a href="peergynt.html">
+                <li>Le Procès de Peer Gynt</li>
+            </a>
+            <a href="atomics.html">
+                <li>Sandia Peak / Richland</li>
+            </a>
+            <a href="kaspar.html">
+                <li>Kaspar</li>
+            </a>
+            <a href="">
+                <li class="active">Parodies: Pièces en 3 minutes</li>
+            </a>
+            <a href="joseph.html">
+                <li>Joseph</li>
+            </a>
+            <a href="miguel.html">
+                <li id="aboutMe">Miguel Pelleterat</li>
+            </a>
+        </ul>
+    </div>
+    <a id="return" href="index.html">Retour accueil</a>
+    <section class="section section-1">
+        <div id="slider">
+            <div class="slide fade" id="slide1">
+                <!-- slide-content is the text -->
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_1"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide2">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_2"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide3">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_3"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide4">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_4"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide5">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_5"></span>
+                </div>
+            </div>
+            <!-- avoir tous les slides disponible (le max)
+                        et ne jouer que les slides concernés -->
+            <div class="slide fade" id="slide6">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_6"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide7">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_7"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-2">
+        <i class="icone fa fa-chevron-down"></i>
+        <div class="texts">
+            <p>Invité à faire quotidiennement une chronique radiophonique sur l'actualité théâtrale, et étant plus écrivain que critique, j'ai proposé ceci: faire chaque semaine la parodie d'une pièce de théâtre qui est en représentation, et la faire jouer
+                en direct par l'équipe et les invités.</p>
+            <p>Un an d'humour, de dialogues en tout genres, d'exploration des thèmes les plus brûlants de la scène Lyonnaise.<br>Que du bonheur.</p>
+        </div>
+    </section>
+    <section class="section section-3">
+        <div class="pieceitem_container">
+            <i class="icone fa fa-headphones"></i>
+            <p>Écouter la playlist</p>
+            <iframe height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/268189901&color=%23445454&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"></iframe>
+        </div>
+
+    </section>
+    <section class="section section-4">
+        <div class="easteregg" onclick="easteregg(1)"></div>
+    </section>
+
+    <script src="js/temp.js"></script>
+    <!-- this script load the according slider -->
+    <script>
+        changeSlider(5)
+    </script>
+    <!--<script src="js/easteregg.js"></script>-->
+</body>
+
+</html>

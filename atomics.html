@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sandia Peak / Richland - Trope Theatre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/pagestyle.css" />
+    <script src="data/pageSlider.js"></script>
+    <script defer src="fonts/fontawesome-all.js"></script>
+</head>
+
+<body>
+    <div id="menu">
+        <ul>
+            <!-- change the active class per page-->
+            <a href="pendus.html">
+                <li>Pendus</li>
+            </a>
+            <a href="peergynt.html">
+                <li>Le Procès de Peer Gynt</li>
+            </a>
+            <a href="">
+                <li class="active">Sandia Peak / Richland</li>
+            </a>
+            <a href="kaspar.html">
+                <li>Kaspar</li>
+            </a>
+            <a href="troisminutes.html">
+                <li>Parodies: Pièces en 3 minutes</li>
+            </a>
+            <a href="joseph.html">
+                <li>Joseph</li>
+            </a>
+            <a href="miguel.html">
+                <li id="aboutMe">Miguel Pelleterat</li>
+            </a>
+        </ul>
+    </div>
+    <a id="return" href="index.html">Retour accueil</a>
+    <section class="section section-1">
+        <div id="slider">
+            <div class="slide fade" id="slide1">
+                <!-- slide-content is the text -->
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_1"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide2">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_2"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide3">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_3"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide4">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_4"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide5">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_5"></span>
+                </div>
+            </div>
+            <!-- avoir tous les slides disponible (le max)
+                        et ne jouer que les slides concernés -->
+            <div class="slide fade" id="slide6">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_6"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide7">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_7"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-2">
+        <i class="icone fa fa-chevron-down"></i>
+        <div class="texts">
+            <p>
+                Durant la Deuxième Guerre Mondiale, aux États Unis. Pour travailler à la fabrication des munitions, des chars, des bombardiers, et tenir tout un pays en état de fonctionner, les femmes ont étés mises à contribution, formées, et mises au travail. C'était
+                pour beaucoup d'entre elles l'occasion d'acquérir une indépendance.
+            </p>
+            <p>
+                Parmi ces projets de guerre, il y en avait un, protégé par un secret militaire total, et dont l'ampleur dépasse tout ce qui était possible. Ce projet employa plus de 130 000 personnes a travers tout le pays, et coûta l'équivalent de 26 milliards de dollars.<br>                Comme tout autre effort de guerre, ce projet a employé des femmes.
+
+            </p>
+        </div>
+        <h4>Diffusion: 20 mai, 27 mai, et 3 juin 2016, sur Radio Canut.<br>Distribution : Lætitia Paris, Emmanuelle Mehring, Evelyne Hotier, Charlotte Thouilleux, Benoît Ferrand, Pauline Thireau, et Amandine Vinson<br> Conception sonore et bruitages : Sarah
+            Layani
+        </h4>
+    </section>
+    <section class="section section-3-alternate">
+
+        <div class="pieceitem_container">
+            <i class="icone fa fa-headphones"></i>
+            <p>Écouter Sandia Peak (durée: 40mn)</p>
+            <iframe width="100%" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/442058373&color=%2332322c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+
+            <!--<audio controls>
+             <source src="sounds/sandiapeak.mp3" type="audio/mpeg">
+           Your browser does not support the audio tag.
+              </audio>-->
+        </div>
+
+        <div class="pieceitem_container">
+            <br>
+            <i class="icone fa fa-headphones"></i>
+            <p>Écouter Richland (durée: 46mn)
+            </p>
+            <iframe width="100%" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/442056072&color=%23333333&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </div>
+
+    </section>
+    <section class="section section-4">
+        <div class="easteregg" onclick="easteregg(1)"></div>
+    </section>
+
+    <script src="js/temp.js"></script>
+    <!-- this script load the according slider -->
+    <script>
+        changeSlider(3)
+    </script>
+    <!--<script src="js/eastereggsp.js"></script>-->
+</body>
+
+</html>

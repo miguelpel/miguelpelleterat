@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Miguel Pelleterat - Trope Theatre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/pagestyle.css" />
+    <script src="data/pageSlider.js"></script>
+    <script defer src="fonts/fontawesome-all.js"></script>
+</head>
+
+<body>
+    <div id="menu">
+        <ul>
+            <!-- change the active class per page-->
+            <a href="pendus.html">
+                <li>Pendus</li>
+            </a>
+            <a href="peergynt.html">
+                <li>Le Procès de Peer Gynt</li>
+            </a>
+            <a href="atomics.html">
+                <li>Sandia Peak / Richland</li>
+            </a>
+            <a href="kaspar.html">
+                <li>Kaspar</li>
+            </a>
+            <a href="troisminutes.html">
+                <li>Parodies: Pièces en 3 minutes</li>
+            </a>
+            <a href="joseph.html">
+                <li>Joseph</li>
+            </a>
+            <a href="">
+                <li class="active" id="aboutMe">Miguel Pelleterat</li>
+            </a>
+        </ul>
+    </div>
+    <a id="return" href="index.html">Retour accueil</a>
+    <section class="section section-1">
+        <div id="slider">
+            <div class="slide fade" id="slide1">
+                <!-- slide-content is the text -->
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_1"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide2">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_2"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide3">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_3"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide4">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_4"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide5">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_5"></span>
+                </div>
+            </div>
+            <!-- avoir tous les slides disponible (le max)
+                        et ne jouer que les slides concernés -->
+            <div class="slide fade" id="slide6">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_6"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide7">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_7"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-2">
+        <i class="icone fa fa-chevron-down"></i>
+        <div class="texts">
+            <p>Miguel est écrivain.<br> Spécialisé dans la théâtre et la radio, il a développé une grande sensibilité aux dialogues.<br> Il écrit en français bien sûr, mais aussi en anglais.<br> Il a beaucoup voyagé, et travaillé en France, au Danemark,
+                et en Grèce.
+                <br> Maintenant, il veut en plus arriver à écrire en grec moderne.
+            </p>
+            <p>
+                Ses grandes préoccupations sont: les illusions des êtres humains, les échecs de leurs entreprises, et les particularités génétiques du bichon bolonais.
+            </p>
+        </div>
+    </section>
+    <section class="section section-3">
+        <a class="pieceitem" href="mailto:pelleteratdeborde@yahoo.fr">
+            <i class="icone fa fa-envelope"></i>
+            <p>Envoyer un mail au bonhomme</p>
+        </a>
+        <a class="pieceitem" href="https://www.facebook.com/miguel.pelleterat">
+            <i class="icone fab fa-facebook"></i>
+            <p>Trouver le gars sur Facebook</p>
+        </a>
+        <a class="pieceitem" href="https://www.linkedin.com/in/miguel-pelleterat-53458ba1/">
+            <i class="icone fab fa-linkedin"></i>
+            <p>Dénicher le mec sur Linkedin</p>
+        </a>
+        <!--<div class="pieceitem">
+            <i class="icone fa fa-laptop"></i>
+            <p>Aller voir comment ils s'en sort quand il fait des sites internet</p>
+        </div>-->
+        <!--<div class="pieceitem">
+            <i class="icone fab fa-d-and-d"></i>
+            <p>Lui commander un scénario</p>
+        </div>-->
+        <!--<a class="pieceitem" href="texts/kremasmenoi-m-e-p2.pdf" download>
+            <i class="icone fa fa-file-pdf"></i>
+            <p>Vous reprendrez bien un peu de C.V. ?</p>
+        </a>-->
+    </section>
+    <section class="section section-4">
+        <div class="easteregg" onclick="easteregg(1)"></div>
+    </section>
+
+    <script src="js/temp.js"></script>
+    <!-- this script load the according slider -->
+    <script>
+        changeSlider(7)
+    </script>
+    <script src="js/easteregg.js"></script>
+</body>
+
+</html>

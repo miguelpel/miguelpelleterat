@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Joseph - Trope Theatre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/pagestyle.css" />
+    <script src="data/pageSlider.js"></script>
+    <script defer src="fonts/fontawesome-all.js"></script>
+</head>
+
+<body>
+    <div id="menu">
+        <ul>
+            <!-- change the active class per page-->
+            <a href="pendus.html">
+                <li>Pendus</li>
+            </a>
+            <a href="peergynt.html">
+                <li>Le Procès de Peer Gynt</li>
+            </a>
+            <a href="atomics.html">
+                <li>Sandia Peak / Richland</li>
+            </a>
+            <a href="kaspar.html">
+                <li>Kaspar</li>
+            </a>
+            <a href="troisminutes.html">
+                <li>Parodies: Pièces en 3 minutes</li>
+            </a>
+            <a href="">
+                <li class="active">Joseph</li>
+            </a>
+            <a href="miguel.html">
+                <li id="aboutMe">Miguel Pelleterat</li>
+            </a>
+        </ul>
+    </div>
+    <a id="return" href="index.html">Retour accueil</a>
+    <section class="section section-1">
+        <div id="slider">
+            <div class="slide fade" id="slide1">
+                <!-- slide-content is the text -->
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_1"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide2">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_2"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide3">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_3"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide4">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_4"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide5">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_5"></span>
+                </div>
+            </div>
+            <!-- avoir tous les slides disponible (le max)
+                        et ne jouer que les slides concernés -->
+            <div class="slide fade" id="slide6">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_6"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide7">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_7"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-2">
+        <i class="icone fa fa-chevron-down"></i>
+        <div class="texts">
+            <p>Joseph:<br>Un poète raté? Un observateur de son époque? Un jeune homme idéaliste et plein d'avenir?<br>Joseph, c'est surtout un de ces hommes qui ont arrosé le mal, en ont pris soin, lui ont permis de grandir.</p>
+            <p>Joseph est une pièce de commande, qui a été écrite à partir des journaux de Joseph Goebbels. On croit d'abord entrer dans la tête de l'homme facilement. Mais on découvre vite que ces écrits font à la fois partie de son intimité et de sa propagande.</p>
+        </div>
+        <h4>Texte écrit sur commande de Raphaël Patout<br> Première représentation: Festival de Caves, Lyon, 2014<br> Mise en scène: Raphaël Patout<br>Jeu : Pierre-François Doireau<br> Costumes: Sigolène Petey<br> Photographies : Patrice Forsans
+        </h4>
+    </section>
+    <section class="section section-3">
+        <a class="pieceitem" href="texts/kremasmenoi-m-e-p2.pdf" download>
+            <i class="icone fa fa-file-pdf"></i>
+            <p>Télécharger le texte</p>
+        </a>
+        <div class="pieceitem">
+            <i class="icone fa fa-file-image"></i>
+            <p>Voir les photos</p>
+        </div>
+
+    </section>
+    <section class="section section-4">
+        <div class="easteregg" onclick="easteregg(1)"></div>
+    </section>
+
+    <script src="js/temp.js"></script>
+    <!-- this script load the according slider -->
+    <script>
+        changeSlider(6)
+    </script>
+    <!--<script src="js/easteregg.js"></script>-->
+</body>
+
+</html>

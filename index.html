@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Miguel Pelleterat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <!-- slider.js are the datas -->
+    <script src="data/slider.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- start menu -->
+        <div id="menu">
+            <ul>
+                <li class="active" onclick="changeSlider(1)">Pendus</li>
+                <li onclick="changeSlider(2)">Le Procès de Peer Gynt</li>
+                <li onclick="changeSlider(3)">Sandia Peak / Richland</li>
+                <li onclick="changeSlider(4)">Kaspar</li>
+                <li onclick="changeSlider(5)">Parodies: Pièces en 3 minutes</li>
+                <li onclick="changeSlider(6)">Joseph</li>
+
+                <!--<li onclick="changeSlider(6)">Exhortation à l'Espace</li>-->
+                <li id="aboutMe" onclick="changeSlider(7)">Miguel Pelleterat</li>
+            </ul>
+        </div>
+        <!-- Le boutton AboutWork change de destination
+            ET de contenu selon le slider active.
+        <a id="AboutWork" href="pendus.html">About This Work</a>
+        <!-- end button About This Work -->
+        <!-- start slider -->
+        <!-- container of the container -->
+        <div id="slider">
+            <div class="slide fade" id="slide1">
+                <!-- slide-content is the text -->
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_1"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide2">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_2"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide3">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_3"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide4">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_4"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide5">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_5"></span>
+                </div>
+            </div>
+            <!-- avoir tous les slides disponible (le max)
+                et ne jouer que les slides concernés -->
+            <div class="slide fade" id="slide6">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_6"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide7">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_7"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- temp.js is the main script -->
+    <script src="js/temp.js"></script>
+</body>
+
+</html>

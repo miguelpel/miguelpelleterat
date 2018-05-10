@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kaspar - Trope Theatre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/pagestyle.css" />
+    <script src="data/pageSlider.js"></script>
+    <script defer src="fonts/fontawesome-all.js"></script>
+</head>
+
+<body>
+    <div id="menu">
+        <ul>
+            <!-- change the active class per page-->
+            <a href="pendus.html">
+                <li>Pendus</li>
+            </a>
+            <a href="peergynt.html">
+                <li>Le Procès de Peer Gynt</li>
+            </a>
+            <a href="atomics.html">
+                <li>Sandia Peak / Richland</li>
+            </a>
+            <a href="">
+                <li class="active">Kaspar</li>
+            </a>
+            <a href="troisminutes.html">
+                <li>Parodies: Pièces en 3 minutes</li>
+            </a>
+            <a href="joseph.html">
+                <li>Joseph</li>
+            </a>
+            <a href="miguel.html">
+                <li id="aboutMe">Miguel Pelleterat</li>
+            </a>
+        </ul>
+    </div>
+    <a id="return" href="index.html">Retour accueil</a>
+    <section class="section section-1">
+        <div id="slider">
+            <div class="slide fade" id="slide1">
+                <!-- slide-content is the text -->
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_1"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide2">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_2"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide3">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_3"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide4">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_4"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide5">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_5"></span>
+                </div>
+            </div>
+            <!-- avoir tous les slides disponible (le max)
+                        et ne jouer que les slides concernés -->
+            <div class="slide fade" id="slide6">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_6"></span>
+                </div>
+            </div>
+            <div class="slide fade" id="slide7">
+                <div class="slide-content">
+                    <p class="character"></p>
+                    <span class="output" id="output_7"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-2">
+        <i class="icone fa fa-chevron-down"></i>
+        <div class="texts">
+            <p>Kaspar Hauser a vécu en Allemagne au XIXème siècle. Durant 16 ans, il a vécu enfermé et soustrait au monde, pour se retrouver soudain au milieu de la civilisation. Cette performance fait résonner les champs du mouvement et de la logique des
+                mots. Il s’agit d’équilibre instable, entre la présence physique et verbale des performers et l’espace scénique.</p>
+            <p>
+                Kaspar a été créé et développé dans un processus d’improvisations à partir de textes écrits pour l’occasion. Dépassant les limites entre théâtre, danse, et nouveau cirque, pour composer une forme différente d’événement scénique.<br> La
+                performance a été créée par un ensemble international, et a bénéficié du soutien de la Dansehallerne, et la Danish Arts Foundation.
+            </p>
+        </div>
+        <h5>
+            Première représentation: Dansehallerne, Copenhague, avril 2014<br> Avec : Tomomi Yamauchi, Samuel Gustavsson et Troels Hagen Findsen<br> Chorégraphie : Imre Vass<br> Concept : Samuel Gustavsson et Miguel Pelleterat<br> Texte, scénographie
+            et costumes : Miguel Pelleterat<br> Lumières : Tobias Stål
+            <br> Photographies : Thomas Petri
+        </h5>
+    </section>
+    <section class="section section-3-alternate">
+        <div class="pieceitem_container">
+            <i class="icone fa fa-film"></i>
+            <p>Voir le trailer</p>
+            <iframe src="https://player.vimeo.com/video/122465297" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <p></p>
+        <p></p>
+        <a class="pieceitem" href="texts/Kaspar-Materials-Miguel-Pelleterat.pdf" download>
+            <i class="icone fa fa-file-pdf"></i>
+            <p>Télécharger le texte<br>(En anglais)</p>
+        </a>
+    </section>
+    <section class="section section-4">
+        <div class="easteregg" onclick="easteregg(1)"></div>
+    </section>
+
+    <script src="js/temp.js"></script>
+    <!-- this script load the according slider -->
+    <script>
+        changeSlider(4)
+    </script>
+    <script src="js/eastereggkaspar.js"></script>
+</body>
+
+</html>

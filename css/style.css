@@ -1,0 +1,203 @@
+    @font-face {
+        font-family: 'Fira';
+        src: url('../fonts/FiraSans-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Fira Medium';
+        src: url('../fonts/FiraSans-Medium.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    body {
+        background-color: #000;
+        margin: 0;
+        padding: 0;
+    }
+    /* slider is the container of container */
+    
+    #slider,
+    .wrap,
+    .slide-content {
+        margin: 0;
+        padding: 0;
+        /* font-family: Courier, 'Fira', Arial, Helvetica, sans-serif; */
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 500;
+        width: 100%;
+        height: 100vh;
+        /* originally: overflow-y */
+        overflow: hidden;
+    }
+    
+    .wrap {
+        position: relative;
+    }
+    /************/
+    /*   MENU   */
+    /************/
+    
+    #menu {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+        top: 10px;
+        right: 10px;
+        /*width: 20%;*/
+        width: 130px;
+        /* max-width: 140px; */
+        z-index: 2;
+    }
+    
+    #menu ul {
+        /* ??? */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #menu li {
+        font-family: 'Fira', Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 10px;
+        width: 110px;
+        color: white;
+        text-decoration: none;
+        align-self: flex-end;
+        border: 1px solid white;
+        cursor: pointer;
+    }
+    
+    #menu li:hover {
+        background-color: rgba(255, 255, 0, 0.3);
+        /* color: black; */
+    }
+    
+    #menu li.active {
+        width: 115px;
+    }
+    
+    #menu #aboutMe {
+        margin-top: 10px;
+    }
+    
+    #AboutWork {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-family: 'Fira', Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 10px;
+        width: 110px;
+        color: white;
+        text-decoration: none;
+        align-self: flex-end;
+        border: 1px solid white;
+        z-index: 2;
+    }
+    
+    a:hover {
+        background-color: rgba(255, 255, 0, 0.3);
+        /* color: black; */
+    }
+    /************/
+    /* SLIDES   */
+    /************/
+    /* slide is one of the classes of the images */
+    
+    .slide {
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        opacity: 1;
+    }
+    
+    .slide-content {
+        /* the display is FLEX. Use it to adapt
+        the thing*/
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .character {
+        margin: 0;
+        padding: 0;
+        padding-top: 10%;
+        font-size: 1.5rem;
+        color: #ffffff;
+        height: 2em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .slide-content span {
+        /* here we handle the position of the text*/
+        /* There's a media querie to do here, about the size of the text.
+        Remember that it will have to do too for the pages */
+        padding: 0 28%;
+        font-size: 1.5rem;
+        color: #ffffff;
+        opacity: 1;
+        -webkit-transition: opacity 1.5s ease-out;
+        /* Safari */
+        transition: opacity 1.5s ease-out;
+    }
+    
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 0.5s;
+        animation-name: fade;
+        animation-duration: 0.5s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {
+            opacity: 0
+        }
+        to {
+            opacity: 1
+        }
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: 0
+        }
+        to {
+            opacity: 1
+        }
+    }
+    /* Old Desktops and laptops ------------------ */
+    
+    @media only screen and (min-width: 1025px) {
+        /* Add Your CSS Styling Here */
+    }
+    /* Tablets (landscape) ------------------- */
+    
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+        /* Add Your CSS Styling Here */
+    }
+    /* Tablets (portrait) -------------------- */
+    
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        /* Add Your CSS Styling Here */
+    }
+    /* Smartphones (landscape) ---------------- */
+    
+    @media only screen and (min-width: 321px) and (max-width: 767px) {
+        /* Add Your CSS Styling Here */
+    }
+    /* Smartphones (portrait) ---------------- */
+    
+    @media only screen and (max-width: 320px) {
+        /* Add Your CSS Styling Here */
+    }
