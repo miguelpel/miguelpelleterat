@@ -187,7 +187,7 @@
     
     .section-4 {
         min-height: 300px;
-        background: url('../images/assets/background_bouteille_c4.jpg') no-repeat;
+        background: url('https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959014/miguel-site/assets/background_bouteille_c4.jpg') no-repeat;
         background-size: cover;
         background-position: center;
         display: flex;
